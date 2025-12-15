@@ -1,0 +1,1080 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+  scroll-behavior: smooth;
+}
+
+/*HEADER*/
+header {
+    background-color: #152237;
+    padding: 10px 98px 10px 98px;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    opacity: 1;
+}
+
+/*sous header pour space between*/
+.header-contenu {
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/*logo + formations */
+.logo-img {
+  height: 31px;
+  width: 84px;
+  object-fit: contain;
+}
+
+.nav-formations {
+  color: #ffffff;
+  font-size: 1rem;
+  font-weight: 500;
+  text-decoration: none;
+}
+
+
+/*barre de recherche*/
+.barre_de_recherche {
+  display: flex;
+  align-items: center;
+  width: 477px;
+  height: 40px;
+  border-radius: 6px;
+  border: 1px solid #ffffff;
+}
+
+.barre_de_recherche input {
+    flex: 2;
+    height: 100%;
+    border: none;
+    outline: none;
+    background: transparent;
+    color: #ffffff;
+    font-size: 0.9375rem;
+    font-family: 'Montserrat';
+    font-weight: 500;
+    text-align: start;
+    padding-left: 10px;
+}
+
+.barre_de_recherche input::placeholder {
+  color: #FFFFFF;
+  opacity: 1;
+}
+
+
+.search-btn {
+  border: none;
+  background: transparent;
+  cursor: pointer;
+}
+
+/*boutons connexion et inscription*/
+.boutons-connex-inscript {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.btn {
+  border-radius: 6px;
+  border: none;
+  cursor: pointer;
+  padding: 10px 20px;
+  font-size: 0.9375rem;
+  font-weight: 500;
+  width: 130px;
+  height: 40px;
+}
+
+.btn-connexion {
+  background: #ffffff;
+  color: #152237;
+}
+
+.btn-inscription {
+  background: linear-gradient(95.98deg, #44DD8A 8.7%, #15B7E2 100%);
+  color: #152237;
+}
+
+#menu-burger{
+  display: none;
+}
+
+/* ___________________________________________________________________ */
+
+/* SECTION HERO BANNIERE */
+
+/*bannière hero*/
+.banniere-hero {
+  width: 100%;
+  height: 450px;
+  background-image: linear-gradient(94deg, rgba(68, 221, 138, 0.8),rgba(21, 183, 226, 0.8)), url(images/bg-header.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  overflow: hidden; 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/*tout centrer dans la bannière */
+.banniere-contenu {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0 16px;
+}
+
+/* titre */
+h1 {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 800;
+  font-size: 3rem;
+  letter-spacing: -0.015em;
+  color: #152237;
+  margin-bottom: 12px;
+}
+
+/* sous-titre */
+#hero-sous-titre {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+  font-size: 1.25rem;
+  letter-spacing: -0.015em;
+  color: #000000;
+  margin-bottom: 24px;
+}
+
+/*bouton bannière*/
+#hero-bouton {
+  background-color: #ffffff;
+  color: #152237;
+  border-radius: 6px;
+  padding: 11px 24px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+  font-size: 0.9375rem;
+  line-height: 18px;
+  letter-spacing: -0.015em;
+  border: none;
+  cursor: pointer;
+}
+
+
+/* ___________________________________________________________________ */
+
+/* SECTIONS FORMATIONS */
+
+
+/* sections formations globales */
+.section-formations-populaires {
+  padding: 60px 98px;
+  background-color: #FFFFFF;
+  color: #152237;
+}
+
+.section-formations-recentes {
+  padding: 60px 98px;
+  background-color: #152237;
+  color: #FFFFFF;
+}
+
+.container-formations {
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+
+/* big titre */
+
+.section-title-populaires {
+  color: #152237;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 800;
+  font-size: 2.25rem;
+  letter-spacing: -0.015em;
+  margin-bottom: 32px;
+}
+
+.section-title-recentes {
+  color: #FFFFFF;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 800;
+  font-size: 2.25rem;
+  letter-spacing: -0.015em;
+  margin-bottom: 32px;
+}
+
+
+/* grid */
+
+.formations-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  column-gap: 50px;
+  row-gap: 40px;
+}
+
+.formation-card {
+  display: flex;
+  flex-direction: column;
+  max-width: 306px;
+  justify-self: center;
+}
+
+
+/* image vert */
+
+.formation-image {
+  position: relative;
+  width: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+
+/* prix */
+
+.prix-sticker {
+  position: absolute;
+  right: 15px;
+  bottom: -8px;
+  background-color: #152237;
+  color: #FFFFFF;
+  border-radius: 93px;
+  padding: 6px 12px;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 0.875rem;
+  box-shadow: 5px 4px 13px -1px rgba(0, 0, 0, 0.25);
+}
+
+.prix {
+  font-weight: 700;
+  font-size: 1.25rem;
+}
+
+.prix-sticker .ancien-prix {
+  font-weight: 400;
+  font-size: 0.625rem;
+  text-decoration: line-through;
+}
+
+/* formations récentes (prix) */
+
+.section-formations-recentes .prix-sticker {
+  background-color: #FFFFFF;
+  color: #152237;
+}
+
+/* text details */
+
+.formation-body {
+  margin-top: 24px;
+}
+
+.formation-title {
+  font-weight: 700;
+  font-size: 1.5rem;
+  letter-spacing: -0.015em;
+  margin-bottom: 4px;
+}
+
+.formation-title-recentes{
+  font-weight: 700;
+  font-size: 1.5rem;
+  letter-spacing: -0.015em;
+  margin-bottom: 4px;
+}
+
+.formateur {
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 25px;
+  margin-bottom: 8px;
+  color: #152237;
+}
+
+.section-formations-recentes .formateur {
+  color: #FFFFFF;
+}
+
+/* étoiles */
+
+.formation-note {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  margin-bottom: 8px;
+}
+
+/* description formation */
+
+.formation-desc {
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 18px;
+  color: #152237;
+}
+
+.section-formations-recentes .formation-desc {
+  color: #E5E7EB;
+}
+
+/* boutons voir plus */
+
+.formations-cta {
+  text-align: center;
+  margin-top: 40px;
+}
+
+.btn-section {
+  border-radius: 6px;
+  padding: 10px 24px;
+  font-family: "Montserrat", sans-serif;
+  font-size: 0.9375rem;
+  font-weight: 500;
+  cursor: pointer;
+  border: none;
+}
+
+.btn-section-populaires {
+  background-color: #152237;
+  color: #FFFFFF;
+}
+
+.btn-section-recentes {
+  background-color: #FFFFFF;
+  color: #152237;
+}
+
+
+/* ___________________________________________________________________ */
+
+/* AVIS CLIENTS */
+
+
+/* section global avis */
+.section-avis {
+  padding: 60px 98px 80px;
+  background-color: #FFFFFF;
+  color: #152237;
+}
+
+.container-avis {
+  max-width: 1680px;
+  margin: 0 auto;
+}
+
+.section-title-avis {
+  text-align: center;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 900;
+  font-size: 2.5rem;
+  letter-spacing: -0.015em;
+  margin-bottom: 48px;
+}
+
+/* grid separation */
+
+.avis-grid {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 60px;
+}
+
+/* carte d'avis */
+
+.avis-card {
+  max-width: 689px;
+}
+
+/* photo + nom + étoiles */
+
+.avis-header {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  margin-bottom: 16px;
+}
+
+.avis-photo {
+  width: 139px;
+  height: 139px;
+  border-radius: 50%;
+  object-fit: cover;
+  display: block;
+}
+
+.avis-nom {
+  font-weight: 700;
+  font-size: 1.5rem;
+  line-height: 36px;
+  letter-spacing: -0.015em;
+  margin-bottom: 4px;
+}
+
+/* étoiles */
+
+.avis-note img {
+  display: block;
+}
+
+/* texte de l'avis */
+
+.avis-texte {
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 30px;
+  letter-spacing: -0.015em;
+  color: rgba(0, 0, 0, 0.8);
+}
+
+
+
+/* ___________________________________________________________________ */
+
+
+/* LES AVANTAGES */
+
+
+/* sections */
+.section-avantages {
+  padding: 60px 98px;
+  background-color: #F5F5F5;
+  color: #152237;
+}
+
+.section-creer {
+  padding: 60px 98px;
+  background-color: #44DD8A;
+  color: #152237;
+}
+
+/* big div pareil pour avantages et creer */
+.avantages-big-div {
+  max-width: 1400px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 80px;
+}
+
+/* partie texte */
+.avantages-texte {
+  flex: 1;
+}
+
+/* partie image */
+.avantages-image {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.avantages-img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Titres */
+.section-title-avantages, .section-title-creer {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 900;
+  font-size: 2.5rem;
+  letter-spacing: -0.015em;
+  margin-bottom: 32px;
+}
+
+.section-title-avantages {
+  color: #152237;
+}
+
+.section-creer .section-title-creer {
+  color: #152237;
+}
+
+/* Liste + items */
+.avantages-liste {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.avantage-ligne {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  margin-bottom: 16px;
+}
+
+.avantage-icon {
+  width: 30px;
+  height: 30px;
+  flex-shrink: 0;
+  margin-top: 4px;
+}
+
+.avantage-text {
+  font-weight: 400;
+  font-size: 1.5rem;
+  line-height: 28px;
+  letter-spacing: -0.015em;
+}
+
+.section-title-creer-phone{
+  display: none;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 900;
+  font-size: 2.5rem;
+  letter-spacing: -0.015em;
+  margin-bottom: 15px;
+}
+
+/* Couleurs du texte */
+.section-avantages .avantage-text .section-creer .avantage-text{
+  color: rgba(0, 0, 0, 0.8);
+}
+
+
+
+/* ___________________________________________________________________ */
+
+
+/* A PROPOS */
+
+
+.section-apropos {
+  background-color: #F5F5F5;
+}
+
+.container-apropos {
+  /* margin: 0 auto; */
+  min-height: 740px;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+}
+
+/* partie texte */
+.apropos-texte {
+  padding: 90px 98px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 50%;
+}
+.apropos-titre {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 900;
+  font-size: 2.5rem;
+  line-height: 36px;
+  letter-spacing: -0.015em;
+  color: #152237;
+  margin-bottom: 24px;
+}
+
+.apropos-paragraphe {
+  font-weight: 400;
+  font-size: 1.125rem;
+  line-height: 28px;
+  letter-spacing: -0.015em;
+  color: #152237;
+  margin-bottom: 16px;
+  padding-bottom: 10px;
+}
+
+/* partie logo */
+.apropos-logo-block {
+  width: 50%;
+  background-color: #152237;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+
+/* ___________________________________________________________________ */
+
+
+/* FORMULAIRE */
+
+/* grande section - nous contacter */
+.section-contact {
+  padding: 60px 98px 80px;
+  background-color: #FFFFFF;
+  color: #152237;
+}
+
+/* titre + trait vert */
+.contact-title-box {
+  text-align: center;
+  margin-bottom: 55px;
+  padding-bottom: 25px;
+  border-bottom: 1px solid #44DD8A;  /* trait vert */
+  width: fit-content;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.contact-title {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 900;
+  font-size: 2.5rem;
+  letter-spacing: -0.015em;
+}
+
+/* formulaire */
+.contact-form {
+  max-width: 1340px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
+
+/* ligne nom & email */
+.contact-row {
+  display: flex;
+  gap: 130px;
+}
+
+/* Groupes de champs */
+.input-group {
+  flex: 1;
+}
+
+/* Inputs & textarea */
+.input-group input,
+.input-group textarea {
+  width: 100%;
+  background-color: #152237;
+  color: #FFFFFF;
+  border: none;
+  padding: 10px 16px;
+  font-size: 0.9375rem;
+  letter-spacing: -0.015em;
+}
+
+/* Textarea plus grande */
+.textarea-group textarea {
+  min-height: 200px;
+  resize: vertical;
+}
+
+/* Placeholder blanc */
+.input-group input::placeholder,
+.input-group textarea::placeholder {
+  color: #FFFFFF;
+  opacity: 1;
+}
+
+/* Bouton envoyer */
+.contact-actions {
+  text-align: center;
+  margin-top: 16px;
+}
+
+.contact-btn {
+  width: 352px;
+  height: 45px;
+  border: none;
+  border-radius: 6px;
+  background-color: #44DD8A;
+  color: #152237;
+  font-family: "Montserrat", sans-serif;
+  font-size: 0.9375rem;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+/* Label accessible pour personnes en handicap  */
+.access-label-invisible {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+}
+
+
+/* ___________________________________________________________________ */
+
+
+/* ENFIN LE FOOTEEEER */
+
+footer {
+  background-color: #152237;
+  color: #FFFFFF;
+  margin-top: 0;
+  font-size: 0.9375rem;
+}
+
+/* petite bande dégradée en haut */
+.footer-barre-gradende {
+  height: 18px;
+  background: linear-gradient(90.01deg, #44DD8A 2.38%, #18A0FB 100%);
+}
+
+/* padding global du contenu */
+.footer-inner {
+  padding: 70px 98px;
+}
+
+/* bloc principal (logo + colonnes + boutons) */
+.footer-contenu {
+  display: flex;
+  justify-content: space-between;
+  gap: 80px;
+  margin-bottom: 32px;
+}
+
+/* logo */
+.footer-logo-img {
+  width: 243px;
+  height: auto;
+}
+
+/* colonnes texte au centre */
+.footer-infos {
+  display: flex;
+  gap: 80px;
+}
+
+/* chaque colonne */
+.footer-col {
+  min-width: 170px;
+}
+
+.footer-titre-col {
+  font-weight: 700;
+  font-size: 0.9375rem;
+  margin-bottom: 8px;
+}
+
+.footer-liste {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-liste li {
+  margin-bottom: 4px;
+}
+
+.footer-liste a {
+  color: #FFFFFF;
+  text-decoration: none;
+}
+
+/* colonne des coordonnées */
+.footer-coordonnees {
+    display: flex;
+    flex-direction: column;
+    gap: 14px; /* espace entre chaque ligne */
+}
+
+/* chaque ligne icône + texte */
+.footer-ligne {
+    display: flex;
+    align-items: flex-start;
+    gap: 10px; /* espace entre l'icône et le texte */
+}
+
+/* icônes PNG */
+.footer-icone-img {
+    width: 24px;   /* taille exacte de figma */
+    height: 24px;
+    object-fit: contain;
+    margin-top: 2px;
+}
+
+/* texte coordonnées */
+.footer-ligne p {
+    margin: 0;
+    color: #FFFFFF;
+    font-size: 0.9375rem;
+    line-height: 20px;
+}
+
+
+/* boutons connexion / inscription à droite */
+.footer-actions {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+
+/* trait vert */
+.footer-separateur {
+  height: 2px;
+  width: 100%;
+  background-color: #44DD8A;
+  margin-bottom: 16px;
+}
+
+/* bas de footer */
+.footer-bas {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.footer-copy {
+  color: #FFFFFF;
+}
+
+/* réseaux sociaux */
+.footer-socials {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.footer-socials-label {
+  font-weight: 400;
+}
+
+/* ___________________________________________________________________ */
+
+/* RESPONSIVE ..  */
+
+
+@media (max-width: 768px) {
+
+    /* navbar */
+
+.logo-img {
+    width: 33%; /* logo en % */
+    height: auto;
+}
+
+    .nav-formations, .barre_de_recherche, .boutons-connex-inscript{
+    display: none;
+}
+ 
+#menu-burger {
+    width: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    font-size: 35px;
+    color: white;
+}
+
+
+/* header */
+
+header {
+    padding: 5%;        /* 5% à gauche/droite au lieu de 98px */
+    height: auto;
+}
+
+.header-contenu {
+    gap: 15px;
+    align-items: center;
+    padding-top: 2%;
+}
+
+
+/* bannière */
+
+h1{
+    font-size: 2rem; 
+    line-height: 1.15;
+    max-width: 92%;
+}
+
+.banniere-hero {
+  width: 100%;
+  background-image: linear-gradient(94deg, rgba(68, 221, 138, 0.8),rgba(21, 183, 226, 0.8)), url(images/pexels-polina-zimmerman-3747457\ 1.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  overflow: hidden; 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+  
+/* sections formations */
+
+.section-formations-populaires, .section-formations-recentes {
+    padding: 40px 5%;
+}
+
+.container-formations {
+    max-width: 100%;
+}
+
+.section-title-populaires, .section-title-recentes {
+    text-align: center;
+}
+
+.formations-grid {
+    grid-template-columns: 1fr;
+    row-gap: 32px;
+}
+
+.formation-card {
+    width: 80%;               /* 77 mais on arrondit a 80 */
+    max-width: 80%;
+    margin: 0 auto;
+}
+
+.formation-image img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+
+/* avis clients */
+
+.section-avis {
+    padding: 40px 5% 50px;
+}
+
+.avis-grid {
+    flex-direction: column;
+    gap: 32px;
+    align-items: center;
+}
+
+.avis-card {
+    width: 90%;
+    max-width: 90%;
+}
+
+.avis-header {
+    align-items: center;
+}
+
+
+/* avantages et creer */
+.section-avantages, .section-creer {
+    padding: 40px 7%;
+}
+
+.avantages-big-div {
+    flex-direction: column;
+    gap: 32px;
+}
+
+.avantages-img {
+    width: 85%;           /* images en % */
+    max-width: 85%;
+}
+
+.section-title-avantages, .section-title-creer, .section-title-creer-phone {
+    text-align: center;
+}
+
+.section-title-creer-phone{
+  display: flex;
+}
+
+.section-title-creer{
+  display: none;
+}
+
+ /* À propos */
+.container-apropos {
+    flex-direction: column;
+}
+
+.apropos-texte {
+    width: 100%;
+    padding: 40px 5%;
+}
+
+.apropos-titre {
+    text-align: center;
+}
+
+.apropos-logo-block {
+    width: 100%;
+    padding: 40px 0;
+}
+
+.apropos-logo {
+    width: 55%;
+    max-width: 13.75rem;
+}
+
+
+/* formulaire */
+
+.section-contact {
+    padding: 40px 5% 60px;
+}
+
+.contact-title-box {
+    margin-bottom: 32px;
+}
+
+.contact-form {
+    max-width: 90%;
+    width: 90%;
+    gap: 24px;
+}
+
+.contact-row {
+    flex-direction: column;
+    gap: 30px;
+}
+
+.textarea-group textarea {
+    min-height: 180px;
+}
+
+.contact-btn {
+    width: 100%;
+}
+
+
+/* footer */
+
+.footer-inner {
+    padding: 40px 5% 30px;
+}
+
+.footer-contenu {
+    flex-direction: column;
+    align-items: center;
+    gap: 24px;
+}
+
+.footer-logo-img {
+    max-width: 240px;
+
+}
+
+.footer-infos {
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+}
+
+.footer-col {
+    text-align: center;
+}
+
+.footer-actions, .footer-bas, .footer-separateur {
+    display: none;
+}
+}
